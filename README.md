@@ -18,12 +18,18 @@ Database Lab server
 ### For user
 1. Generate ssh key
 
-   Windows: https://www.ssh.com/ssh/putty/windows/puttygen
+   Windows: Step 1 of https://system.cs.kuleuven.be/cs/system/security/ssh/setupkeys/putty-with-key.html#s1
+   
    Linux and Mac: https://www.ssh.com/ssh/keygen/
    
 2. Give public key (e.g. id_rsa.pub) to the system administrator.
 3. Wait for system administrator to add you to the server.
-3. SSH to the server (e.g. ssh username@suyeong.d2.comp.nus.edu.sg).
+3. SSH to the server.
+
+   Windows: Step 3 of https://system.cs.kuleuven.be/cs/system/security/ssh/setupkeys/putty-with-key.html#s3
+   
+   Linux and Mac: ssh username@suyeong.d2.comp.nus.edu.sg in terminal.
+   
 4. You won't have sudo access. Contact system administrator if there is a need to install something on the server with sudo access.
 5. Check the server environment setup below.
 

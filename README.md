@@ -21,16 +21,11 @@ Database Lab server
    Windows: https://www.ssh.com/ssh/putty/windows/puttygen
    Linux and Mac: https://www.ssh.com/ssh/keygen/
    
-2. Give public key to the system administrator (id_rsa.pub)
-3. SSH to the server (e.g. ssh username@suyeong.d2.comp.nus.edu.sg)
+2. Give public key (e.g. id_rsa.pub) to the system administrator.
+3. Wait for system administrator to add you to the server.
+3. SSH to the server (e.g. ssh username@suyeong.d2.comp.nus.edu.sg).
 4. You won't have sudo access. Contact system administrator if there is a need to install something on the server with sudo access.
 5. Check the server environment setup below.
-
-### For system administrator
-1. Create user: sudo adduser username
-2. Copy ssh public key from user to /home/username/.ssh/authorized_keys
-3. Add username to the end of the line of /etc/ssh/sshd_config 
-4. Restart sshd: sudo systemctl restart ssh.service
 
 ### Server Environment
 
@@ -64,11 +59,15 @@ If you want to use Jupyter notebook on the server, you need to do a port forward
 
    localhost:8888
 
-
-
 #### GPU Usage
 Check the GPU usage by using the command nvidia-smi.
 If you are using Tensorflow or PyTorch, try to not to fully use the GPU so we can share with other users (use CUDA visible devices or dynamic GPU allocation in Tensorflow).
+
+### For system administrator
+1. Create user: sudo adduser username
+2. Copy ssh public key from user to /home/username/.ssh/authorized_keys
+3. Add username to the end of the line of /etc/ssh/sshd_config 
+4. Restart sshd: sudo systemctl restart ssh.service
 
 School of Computing server
 --------

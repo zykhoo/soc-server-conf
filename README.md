@@ -55,7 +55,7 @@ If you want to use Jupyter notebook on the server, you need to do a port forward
 
 1. On the server, start the IPython notebooks server:
 
-   ipython notebook --no-browser --port=8889
+   jupyter notebook --no-browser --port=8889
 
 2. On your computer, start an SSH tunnel:
 

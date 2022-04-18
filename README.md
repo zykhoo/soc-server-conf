@@ -70,8 +70,8 @@ Check the GPU usage by using the command nvidia-smi.
 If you are using Tensorflow or PyTorch, try to not to fully use the GPU so we can share with other users (use CUDA visible devices or dynamic GPU allocation in Tensorflow).
 
 ### For system administrator
-1. Create user: sudo adduser username
-2. Copy ssh public key from user to /home/username/.ssh/authorized_keys
+1. Create user: sudo adduser username by adding a new file for the user in root
+2. Copy ssh public key from user to /home/username/.ssh/authorized_keys (ensure public key is formatted ```ssh_rsa <public key, in one line> <username>```, then use ```nano authorized_keys```)
 3. Add username to the end of the line of /etc/ssh/sshd_config 
 4. Restart sshd: sudo systemctl restart ssh.service
 
@@ -96,6 +96,9 @@ If you are outside SoC network, access options are via an intermediary server (s
 ### Running MPI Program
 Guide for running MPI program: https://dochub.comp.nus.edu.sg/cf/guides/compute-cluster/tembusu/mpi
 
-
+### When the server memory is full
+1. Go to root, and check usage via ```df-lh```.
+2. Move files (for example, moving all files for one user ```mv <user> /mnt/data```)
+3. Use ```du -sh *``` to check the server memory usage of individual users
 
 

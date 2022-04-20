@@ -33,6 +33,8 @@ Database Lab server
 4. You won't have sudo access. Contact system administrator if there is a need to install something on the server with sudo access.
 5. Check the server environment setup below.
 
+Users may use this vpn to access the SOC network: https://webvpn.comp.nus.edu.sg/
+
 ### Server Environment
 
 #### Editor

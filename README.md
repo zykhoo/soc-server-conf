@@ -107,8 +107,11 @@ If you are outside SoC network, access options are via an intermediary server (s
 Guide for running MPI program: https://dochub.comp.nus.edu.sg/cf/guides/compute-cluster/tembusu/mpi
 
 ### When the server memory is full
-1. Go to root, and check usage via ```df-lh```.
-2. Move files (for example, moving all files for one user ```mv <user> /mnt/data```)
-3. Use ```du -sh *``` to check the server memory usage of individual users
+1. Go to root, and check usage via ```df -lh```.
+2. Create and move files to ```/mnt/data``` for the user
+a. Make directory for the user ```mkdir /mnt/data/<user>
+b. Move files (for example, moving all files for one user ```mv <user> /mnt/data```)
+c. Change the folder's permission to the user ```chown <user>:<user> /mnt/data/<user>
+4. Use ```du -sh *``` to check the server memory usage of individual users
 
 

@@ -14,6 +14,7 @@ Database Lab server
 1. Suyeong (suyeong.d2.comp.nus.edu.sg) - 2 GeForce GTX1080 GPUs, 64 GB RAM, 12 processors 
 2. Yuna (yuna.d2.comp.nus.edu.sg) - 1 GeForce GTX1080Ti GPU, 64 GB RAM, 16 processors
 3. Fajrian (fajrian-e2s2-1.d1.comp.nus.edu.sg) - 1 GPU GeForce GTX1080Ti, 32 GB RAM, 8 processors
+4. taeyeon (taeyeon.d2.comp.nus.edu.sg) - 1 A100 PCIe Tensor Core GPU, 64 processors
 
 ### For user
 1. Generate ssh key

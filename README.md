@@ -6,7 +6,7 @@ Connection
 Any connection to the servers listed below can be done as following:
 1. Directly when you are in the School of Computing network. Not possible outside SoC (even non-SoC NUS network) 
 2. Access via an intermediary server (suna for staff or sunfire for student). You need to have an SoC account for this (for example: ssh username@sunfire.comp.nus.edu.sg, where username is your SoC account). Not possible outside Singapore (?) 
-3. Access through SoC VPN (https://webvpn.comp.nus.edu.sg/). You need to have NUSNET account for this. Available anywhere in the world (?). Reference: https://dochub.comp.nus.edu.sg/cf/guides/network/vpn
+3. Access through SoC VPN (https://webvpn.comp.nus.edu.sg/). You need to have NUSNET account for this. Available anywhere in the world (?). Reference: https://dochub.comp.nus.edu.sg/cf/guides/network/vpn (tag: forticlient)
 
 Database Lab server
 --------

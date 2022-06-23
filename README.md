@@ -81,10 +81,11 @@ If you are using Tensorflow or PyTorch, try to not to fully use the GPU so we ca
 #### If .ssh file is not created automatically after adduser:
 1. mkdir /home/user/.ssh
 2. chmod 700 /home/user/.ssh
-3. nano authorized_keys
-4. chmod 600 authorized_keys
-5. chown -R user:user /home/user/.ssh
-6. sudo systemctl restart ssh.service
+3. cd /home/user/.ssh
+4. nano authorized_keys (this creates the authorized_keys file)
+5. chmod 600 authorized_keys
+6. chown -R user:user /home/user/.ssh
+7. sudo systemctl restart ssh.service
 
 School of Computing server
 --------

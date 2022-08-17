@@ -87,6 +87,15 @@ If you are using Tensorflow or PyTorch, try to not to fully use the GPU so we ca
 6. chown -R user:user /home/user/.ssh
 7. sudo systemctl restart ssh.service
 
+#### After entering the server
+1. Create a virtual environment ```python3 -m venv <name_of_venv>```
+2. ```exec "$SHELL"```
+3. ```source <name_of_venv>/bin/activate```
+4. ```pip install jupyter``` (and any other libraries)
+5. ```ipython kernel install --user --name=<name_of_venv>```
+6. ```jupyter notebook --no-browser --port xxxx```
+
+
 School of Computing server
 --------
 

@@ -20,6 +20,8 @@ Database Lab server
 1. Generate ssh key
 
    Windows: Step 1 of https://system.cs.kuleuven.be/cs/system/security/ssh/setupkeys/putty-with-key.html#s1
+   Then in puttygen, select the ```Conversions``` tab and convert the format of the key. This is done by ```import```-ing your current ```.ppk``` file, then ```Export``` as ```OpenSSH key``` (again in ```Conversions``` tab).
+
    
    Linux and Mac: https://www.ssh.com/ssh/keygen/
    

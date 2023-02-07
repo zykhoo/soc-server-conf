@@ -113,5 +113,12 @@ Writing default config to: /home/newuser/.jupyter/jupyter_notebook_config.py
 # after this, jupyter notebook runs. 
 ```
 
+## Managing environments in pyenv
 
+to install pyenv virtualenv use: ```git clone https://github.com/pyenv/pyenv-virtualenv.git $(pyenv root)/plugins/pyenv-virtualenv```
 
+to create the virtualenv use: ```pyenv virtualenv <python_version> <environment_name>```
+
+to activate the virtualenv: 1. navigate to the folder where it is, 2. ```pyenv shell <environment_name>``` note that you can replace shell with local/global also. 
+
+to check that you are indeed using the virtualenv: ```pyenv which python```

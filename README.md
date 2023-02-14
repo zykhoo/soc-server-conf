@@ -86,6 +86,10 @@ If there is only one GPU, consider setting memory growth on that GPU, to use onl
 ```sess = tf.Session(config=tf.ConfigProto(gpu_options=gpu_options))```
 https://stackoverflow.com/questions/34199233/how-to-prevent-tensorflow-from-allocating-the-totality-of-a-gpu-memory
 
+to check that the memory growth is limited:
+```tf.config.experimental.get_memory_usage('GPU:0')```
+https://www.tensorflow.org/api_docs/python/tf/config/experimental/get_memory_usage
+
 ### For system administrator
 1. Create user: sudo adduser username by adding a new file for the user in root
 2. Copy ssh public key from user to /home/username/.ssh/authorized_keys (ensure public key is formatted ```ssh_rsa <public key, in one line> <username>```, then use ```nano authorized_keys```)

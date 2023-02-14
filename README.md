@@ -75,14 +75,14 @@ Check the GPU usage by using the command nvidia-smi.
 If you are using Tensorflow or PyTorch, try to not to fully use the GPU so we can share with other users (use CUDA visible devices or dynamic GPU allocation in Tensorflow).
 
 If there are multiple GPUs, consider setting memory growth on one of the GPUs following: 
-physical_devices = tf.config.list_physical_devices('GPU') 
-tf.config.experimental.set_memory_growth(physical_devices[0], True)
+```physical_devices = tf.config.list_physical_devices('GPU') ```
+```tf.config.experimental.set_memory_growth(physical_devices[0], True)```
 https://stackoverflow.com/questions/60048292/how-to-set-dynamic-memory-growth-on-tf-2-1
 
 If there is only one GPU, consider setting memory growth on that GPU, to use only a fraction of the GPU, following: 
-gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=0.333)
+```gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=0.333)```
 
-sess = tf.Session(config=tf.ConfigProto(gpu_options=gpu_options))
+```sess = tf.Session(config=tf.ConfigProto(gpu_options=gpu_options))```
 https://stackoverflow.com/questions/34199233/how-to-prevent-tensorflow-from-allocating-the-totality-of-a-gpu-memory
 
 ### For system administrator

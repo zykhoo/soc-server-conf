@@ -76,6 +76,7 @@ If you are using Tensorflow or PyTorch, try to not to fully use the GPU so we ca
 
 If there are multiple GPUs, consider setting memory growth on one of the GPUs following: 
 ```physical_devices = tf.config.list_physical_devices('GPU') ```
+
 ```tf.config.experimental.set_memory_growth(physical_devices[0], True)```
 https://stackoverflow.com/questions/60048292/how-to-set-dynamic-memory-growth-on-tf-2-1
 

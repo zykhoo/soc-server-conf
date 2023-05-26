@@ -21,6 +21,8 @@ Database Lab server
 
    Windows: Step 1 of https://system.cs.kuleuven.be/cs/system/security/ssh/setupkeys/putty-with-key.html#s1
    Then in puttygen, select the ```Conversions``` tab and convert the format of the key. This is done by ```import```-ing your current ```.ppk``` file, then ```Export``` as ```OpenSSH key``` (again in ```Conversions``` tab).
+   
+   OR Windows: in powershell, use the command ```ssh-keygen```. Navigate to the folder where your ssh keys have been generated. You should see two files. The first is ```id_rsa``` and the second is ```id_rsa.pub```. The latter is your public key. 
 
    
    Linux and Mac: https://www.ssh.com/ssh/keygen/

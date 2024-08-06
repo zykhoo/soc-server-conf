@@ -9,6 +9,7 @@ These were done using the following guides:
 2. https://jupyter-notebook.readthedocs.io/en/stable/public_server.html
 3. https://stackoverflow.com/questions/41560612/jupyter-opening-up-in-w3c
 
+To set up pyenv:
 1. ```git clone https://github.com/pyenv/pyenv.git ~/.pyenv```
 2. ```ls -la .pyenv```
 3. ```cd ~/.pyenv && src/configure && make -C src```
